@@ -92,6 +92,14 @@ h1, h2, h3, h4, h5, h6 {
   .wrapper {
     padding: 100px 0px;
   }
+  .attribution {
+    position: absolute;
+    bottom: -25px;
+    right: 160px;
+    opacity: 0.5;
+    font-family: Outfit;
+    text-align: center;
+  }
 }
 .omlette {
   width: 100%;
@@ -113,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+  position: relative;
   background-color: white;
   border-radius: 20px;
   max-width: 620px;
