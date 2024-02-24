@@ -1,0 +1,175 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    
+}
+
+@media (min-width:375px) {
+    .wrapper{
+        padding: 100px 0px;
+    }
+}
+.omlette{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.in-text-tittle {
+    font-family: "Young Serif";
+    color: hsl(14, 45%, 36%);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.unique{
+    font-size: 16px;
+    color:  hsl(30, 10%, 34%);
+    font-weight: normal;
+}
+
+
+
+
+
+
+.card {
+    
+    background-color: white;
+    border-radius: 20px;
+    max-width: 620px;
+    max-height: fit-content;
+    padding: 25px;
+		&__img {
+          
+		}
+
+		&__text {
+            
+            font-family: Outfit;
+            font-size: 16px;
+            color:  hsl(30, 10%, 34%);
+		}
+
+		&__tittle {
+            font-family: "Young Serif";
+            font-size: 34px;
+            margin: 30px 0px 25px;
+		}
+
+		&__descriptione {
+            margin: 10px 0px;
+		}
+
+		&__prep-time {
+            background-color: hsl(330, 100%, 98%);
+            padding: 30px ;
+            border-radius: 10px;
+            
+            & > span{
+                font-size: 20px;
+                color: hsl(332, 51%, 32%);
+            }
+           
+            
+            & li{
+                color:hsl(24, 5%, 18%);
+                font-weight: 700;
+                margin: 10px 0px 0px 10px;
+            }
+            & li::before{
+                content: '';
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                border-radius: 5px;
+                background-color: rgb(109, 53, 53);
+                margin: 0px 20px 5px 0px;
+            }
+
+		}
+
+		&__ingredients {
+            margin: 15px 0px;
+            & li::before{
+                content: '';
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                border-radius: 5px;
+                background-color: rgb(109, 53, 53);
+                margin: 0px 20px 5px 0px;
+            }
+            & li{
+                margin: 10px 0px 0px 10px;
+            }
+            
+		}
+
+		&__instructions {
+            padding: 20px 0px ;
+            margin: 20px 0px ;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.2) ;
+            border-top: 2px solid rgba(128, 128, 128, 0.2)  ;
+            & ol{
+                list-style: none; 
+                font-weight: 700;
+                margin: 20px 0 0 0;
+                padding:  0px 10px;
+            }
+            & li{
+                margin: 10px 0px 0px 10px;
+                font-weight: 700;
+                counter-increment: li;
+                padding-left:10px;
+            }
+            & li::before{
+                content: counter(li) "."; 
+                color: hsl(14, 45%, 36%);
+                display: inline-block;
+                width: 1em;
+                margin: 0 13px 0 -30px;
+                
+            }
+		}
+
+		&__nutrition {
+            &_decription {
+                margin: 20px 0 0 0;
+			}
+
+		}
+}
+
+
+.grid {
+
+    &__box {
+        display: grid;
+        text-align: left;
+        align-items: center;
+        grid-template:repeat(4,minmax(40px,auto)) /  1fr 1fr ;
+        
+        & div{
+            border-bottom: 2px solid rgba(128, 128, 128, 0.2) ;
+            padding: 15px 20px  ;
+        }
+        & div:nth-of-type(8){
+            border-bottom: none ;
+            margin-bottom: 0px;
+        }
+        & div:nth-of-type(7){
+            border-bottom: none ;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.color-brown {
+    color: hsl(14, 45%, 36%);
+}
